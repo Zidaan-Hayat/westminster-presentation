@@ -1,0 +1,229 @@
+:root {
+	--bg-clr: #000000;
+	--wm-red-clr: #ff6347;
+	--white-clr: #e8e8e4;
+	
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+
+	margin-left: -1%;
+	margin-right: -1%;
+	
+	scrollbar-width: none;
+
+	background-color: var(--bg-clr);
+	background-repeat: initial;
+}
+
+strong {
+	font-weight: 900;
+}
+
+section {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100px;
+	padding-top: 30px;
+}
+
+ul {
+	list-style: none;
+}
+
+.info {
+	color: white;
+	text-align: center;
+	width: 100%;
+}
+
+.thank-you h1 {
+	transform: translateY(-500%);
+	text-align: center;
+	
+	color: var(--white-clr);
+	font-size: 2em;
+}
+
+
+.thank-you {
+	margin-top: -2px;
+	height: 50em;
+	width: 100%;
+
+	text-align: center;
+
+	background-color: var(--bg-clr);
+}
+
+.other-societies-box p {
+	font-size: 1.3vw;
+}
+
+.other-societies-box {
+	background-color: var(--white-clr);
+	color: var(--bg-clr);
+
+	text-align: center;
+	font-size: 2vw;
+}
+
+.practicals-info-box h2 {
+	color: #3a86ff
+}
+
+.practicals-info-box p {
+	font-size: 1.3vw;
+}
+
+.practicals-info-box {
+	text-align: center;
+	font-size: 2vw;
+	background-color: var(--bg-clr);
+	color: var(--white-clr);
+}
+
+.ideas-box {
+	text-align: center;
+	font-size: 2vw;
+	background-color: #3a86ff;
+	color: var(--white-clr);
+}
+
+.head-name:hover {
+	animation-name: rainbow;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+}
+
+.head-name {
+	color: #FAE2FF;
+	white-space: normal;
+}
+
+.intro-box {
+	padding-top: 3em;
+	width: 100%;
+	height: 21em;
+	
+	line-height: 0em;
+	font-size: 1.5vw;
+	text-align: center;
+	/* margin: auto; */
+
+	color: var(--bg-clr);
+	background-color: var(--wm-red-clr);
+}
+
+.header-box {
+	width: 100%;
+	color: var(--wm-red-clr);
+	background-image: url('./assets/circle-scatter.svg');
+	
+	font-family: 'Roboto Mono', monospace;
+	letter-spacing: .2em;
+	font-size: 3vw;
+	text-align: center;
+	line-height: 4em;
+  
+	animation-name: renderHeaderText;
+	animation-duration: 5s;
+	animation-delay: 0s;
+}
+
+
+/* Other Societies Top Arrow */
+
+.custom-shape-divider-top-1629484073 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1629484073 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 200px;
+}
+
+.custom-shape-divider-top-1629484073 .shape-fill {
+    fill: #000000;
+}
+
+/* Other Societies Top Arrow */
+
+/* Practical Info Tilt */
+
+.custom-shape-divider-bottom-1629480054 {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1629480054 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 200px;
+}
+
+.custom-shape-divider-bottom-1629480054 .shape-fill {
+    fill: #000000;
+}
+
+/* Header wave */
+
+.custom-shape-divider-top-1629454331 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1629454331 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 140px;
+}
+
+.custom-shape-divider-top-1629454331 .shape-fill {
+    fill: #000000;
+}
+
+/* Header wave */
+
+/* Animations */
+
+@keyframes renderHeaderText {
+	0% {
+	  color: var(--bg-clr);
+	} 100% {
+	  transition: background-color 2s, color 2s;
+	  color: var(--wm-red-clr);
+	}
+}
+
+@keyframes rainbow {
+	0% {color: #ff0000}
+	10% {color: #ff8000}
+	20% {color: #ffff00}
+	30% {color: #80ff00}
+	40% {color: #00ff00}
+	50% {color: #00ff80}
+	60% {color: #00ffff}
+	70% {color: #0080ff}
+	80% {color: #0000ff}
+	90% {color: #8000ff}
+	100% {color: #ff0080}
+}
